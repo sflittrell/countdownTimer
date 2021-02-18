@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Countdown Timer</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Countdown to Launch</h1>
+        </header>
+
+        <article>
+            <div class="box">
+                <form id="timeInput">
+                    <label id="hoursLabel">Hours:</label>
+                        <input type="text" id="hour" name="hour" min="0" max="23" required>
+                    <label id="minutesLabel">Minutes:</label>
+                        <input type="text" id="minute" name="minute" min="0" max="59" required>
+                    <label id="secondsLabel">Seconds:</label>
+                        <input type="text" id="seconds" name="seconds" min="0" max="59" required>
+                </form>
+            </div>
+            <div class="box">
+                <button type="button" id="launch">Launch</button>
+            </div>
+            <div id="displayTime"></div>
+        </article>
+    </body>
+
+    <script src="main.js"></script>
+</html>
