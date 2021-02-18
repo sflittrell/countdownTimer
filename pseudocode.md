@@ -27,13 +27,13 @@ Start Program
 
         GET current time and date
         currentTime = Compare current time to JavaScript universal (Jan 1 1970) to get how many milliseconds since that date
-        currentTimeTotal = convert userHour, userMin, and userSec to milliseconds (eqSec * userSec + eqMin * userMin + eqHour * userHour) and add it to currentTime // this gets the future time we are counting down to in milliseconds
+        futureTimeTotal = convert userHour, userMin, and userSec to milliseconds (eqSec * userSec + eqMin * userMin + eqHour * userHour) and add it to currentTime // this gets the future time we are counting down to in milliseconds
 
-        counterTime = currentTimeTotal - current time
+        counterTime = futureTimeTotal - current time
 
-        countSec = ((currentTimeTotal % eqMin) / eqSec) rounded down to the nearest integer
-        countMin = ((currentTimeTotal % eqHour) / eqMin) rounded down to the nearest integer
-        countHour = (currentTimeTotal / eqMin) rounded down to the nearest integer
+        countSec = ((counterTime % eqMin) / eqSec) rounded down to the nearest integer
+        countMin = ((counterTime % eqHour) / eqMin) rounded down to the nearest integer
+        countHour = (counterTime / eqHour) rounded down to the nearest integer
 
         displayTime = countHour + countMin + countSec
         SEND displayTime to the html page

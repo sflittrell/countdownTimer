@@ -13,19 +13,32 @@
 
         <article>
             <div class="box">
+                <form id="dateInput">
+                    <div>
+                        <label for="launchDateLabel">Please chose the date of the launch</label>
+                            <input type="date" onfocus="this.value=''" id="launchDate" name="launchDate" required>
+                    </div>
+                </form>
                 <form id="timeInput">
+                    <div>
+                    <label for="launchLabel">Please choose a launch time!</label>
+                        <input type="time" onfocus="this.value=''" id="launchTime" name="launchTime" step="1" required>
+                    </div>
+                </form>
+                <!--<form id="timeInput">
                     <label id="hoursLabel">Hours:</label>
-                        <input type="text" id="hour" name="hour" min="0" max="23" required>
+                        <input type="text" id="hours" name="hours" min="0" max="23" required>
                     <label id="minutesLabel">Minutes:</label>
-                        <input type="text" id="minute" name="minute" min="0" max="59" required>
+                        <input type="text" id="minutes" name="minutes" min="0" max="59" required>
                     <label id="secondsLabel">Seconds:</label>
                         <input type="text" id="seconds" name="seconds" min="0" max="59" required>
-                </form>
+                </form>-->
             </div>
             <div class="box">
-                <button type="button" id="launch">Launch</button>
+                <button type="button" id="launchButton">Launch</button>
             </div>
             <div id="displayTime"></div>
+            <div id="Blastoff"></div>
         </article>
     </body>
 
