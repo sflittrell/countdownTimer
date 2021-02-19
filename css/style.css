@@ -1,8 +1,7 @@
 html {
-    
     background-color: black;
 }
-
+/*
 #explosion {
     background-image: url("../images/hV3.gif");
     position: fixed;
@@ -13,6 +12,10 @@ html {
     overflow: auto;
 
     visibility: visible;
+}
+*/
+
+body {
     
 }
 /*
@@ -38,7 +41,7 @@ h1 {
     width: 400px;
     height: 500px;
     padding: 10px;
-    /*box-shadow:#1ad3a4 10px 15px 20px;*/
+    box-shadow: black 10px 15px 20px;
     text-align: center;
 
 }
@@ -61,12 +64,8 @@ form {
 
 }
 
-.btn {
-
+#reloadButton {
     padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0 auto;
-
 }
 
 #launchButton {
