@@ -9,30 +9,32 @@
 
     <body>
         <header>
-            <h1>Countdown to Launch</h1>
+            
         </header>
 
         <article>
             <div class="box">
+                <h1>Countdown to Launch</h1>
                 <form id="dateInput">
                     <div>
-                        <label for="launchDateLabel">Please chose the date of the launch</label>
-                            <input type="date" onfocus="this.value=''" id="launchDate" name="launchDate" required>
+                        <label for="launchDateLabel">Please chose the date of the launch</label><br>
+                            <input type="date" onfocus="this.value=''" id="launchDate" name="launchDate" min="0" required>
                     </div>
                 </form>
                 <form id="timeInput">
                     <div>
-                    <label for="launchLabel">Please choose a launch time!</label>
-                        <input type="time" onfocus="this.value=''" id="launchTime" name="launchTime" step="1" required>
+                    <label for="launchLabel">Please choose a launch time</label><br>
+                        <input type="time" onfocus="this.value=''" id="launchTime" name="launchTime" step="1" min="0" required>
                     </div>
                 </form>
+                <div class="btn">
+                    <button type="button" id="launchButton"></button>
+                </div>
+                <div id="displayTime"></div>
             </div>
-            <div class="box">
-                <button type="button" id="launchButton">Launch</button>
-            </div>
-            <div id="displayTime"></div>
             <div id="Blastoff"></div>
             <div id="explosion"></div>
+            <div id="rocket"></div>
         </article>
     </body>
 
