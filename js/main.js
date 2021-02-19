@@ -12,15 +12,11 @@ launchButton.onclick = function() {
     const eqSec = 1000;
     const eqMin = eqSec * 60;
     const eqHour = eqMin * 60;
-
-    const startTime = new Date().getTime();
-    //console.log(startTime);
-    //console.log(new Date());
-
+    const eqDay = eqHour * 24;
     const futureTimeTotal = new Date(dateTime).getTime();
     //console.log(futureTimeTotal);
 
-    let pageRefresher = setInterval(countdownTimer, 1000);
+    
 
     function countdownTimer() {
 
@@ -33,8 +29,10 @@ launchButton.onclick = function() {
         //console.log(countSec);
         let countMin = Math.floor((counterTime % eqHour) / eqMin);
         //console.log(countMin);
-        let countHour = Math.floor(counterTime / eqHour);
+        let countHour = Math.floor((counterTime % eqDay) / eqHour);
         //console.log(countHour);
+        let countDay = Math.floor(counterTime / eqDay);
+        //console.log(countDay);
 /*
         if (countSec < 10) {
             countSec = "0" + countSec;
@@ -46,15 +44,17 @@ launchButton.onclick = function() {
             countHour = "0" + countHour;
         }
 */
-        let displayTime = `${countHour}:${countMin}:${countSec}`;
-        //console.log(displayTime);
+        let displayTime = `${countDay} : ${countHour} : ${countMin} : ${countSec}`;
+        console.log(displayTime);
         document.getElementById('displayTime').innerHTML = displayTime;
+
 
         if (counterTime <= 0) {
             clearInterval(pageRefresher);
-            let displayTime = "00:00:00";
+            document.getElementById('displayTime').innerHTML = '';
             document.getElementById('Blastoff').innerHTML = 'Blastoff!'
         }
     }
     countdownTimer();
+    let pageRefresher = setInterval(countdownTimer, 1000);
 }
