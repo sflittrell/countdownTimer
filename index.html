@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8">
+        <title>Countdown Timer</title>
+    </head>
+
+    <body>
+        <header>
+            
+        </header>
+
+        <article>
+            <div class="box">
+                <h1>Countdown to Launch</h1>
+                <form id="dateInput">
+                    <div>
+                        <label for="launchDateLabel">Please chose the date of the launch</label><br>
+                            <input type="date" onfocus="this.value=''" id="launchDate" name="launchDate" min="0" required>
+                    </div>
+                </form>
+                <form id="timeInput">
+                    <div>
+                    <label for="launchLabel">Please choose a launch time</label><br>
+                        <input type="time" onfocus="this.value=''" id="launchTime" name="launchTime" step="1" min="0" required>
+                    </div>
+                </form>
+                <div class="btn">
+                    <button type="button" id="launchButton"></button>
+                </div>
+                <div id="displayTime"></div>
+            </div>
+            <div id="Blastoff"></div>
+            <div id="explosion"></div>
+            <div id="rocket"></div>
+        </article>
+    </body>
+
+    <script src="js/main.js"></script>
+</html>

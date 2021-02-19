@@ -1,0 +1,92 @@
+html {
+    
+    background-color: black;
+}
+
+#explosion {
+    background-image: url("../images/hV3.gif");
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+
+    visibility: visible;
+    
+}
+/*
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
+
+h1 {
+    font-size: 44px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:brown;
+}
+
+.box {
+    border: 5px solid #909696;
+    border-radius: 10px;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #e6f3f3;
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    /*box-shadow:#1ad3a4 10px 15px 20px;*/
+    text-align: center;
+
+}
+
+form {
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#displayTime {
+    font-family: "Major Mono Display",  monospace;
+    font-size: 36px;
+    color: red;
+    background-color: black;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    height: 30px;
+
+}
+
+.btn {
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+
+}
+
+#launchButton {
+    background-image: url("../images/redButton_150.png");
+    background-repeat: no-repeat;
+    border: none;
+    width: 150px;
+    height: 150px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+#Blastoff {
+    text-align: center;
+    font-size: 400%;
+    color: red;
+    font-weight: bold;
+}
+
+#rocket {
+    background-image: url("../images/rocket.png");
+
+}
