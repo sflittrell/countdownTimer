@@ -55,7 +55,7 @@ launchButton.onclick = function() {
             clearInterval(pageRefresher);
             document.getElementById('displayTime').innerHTML = '0 : 0 : 0 : 0';
             document.getElementById('Blastoff').innerHTML = 'Blastoff!'
-            document.body.style.backgroundImage = 'url("../images/hV3.gif")';
+            document.body.style.backgroundImage = 'url("https://sflittrell.github.io/countdownTimer/images/hV3.gif")';
             document.body.style.height = '100%';
         }
 
