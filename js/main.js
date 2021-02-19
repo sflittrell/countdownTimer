@@ -1,7 +1,9 @@
 const launchButton = document.getElementById('launchButton');
+//let pageRefresh = 0;
 
 launchButton.onclick = function() {
 
+    //clearInterval(pageRefresher);
     document.getElementById('Blastoff').innerHTML = ''
     let userDate = document.getElementById('launchDate').value;
     let userTime = document.getElementById('launchTime').value;
@@ -17,7 +19,7 @@ launchButton.onclick = function() {
     //console.log(futureTimeTotal);
 
     
-
+    countdownTimer();
     function countdownTimer() {
 
         let currentTime = new Date().getTime();
@@ -51,10 +53,13 @@ launchButton.onclick = function() {
 
         if (counterTime <= 0) {
             clearInterval(pageRefresher);
-            document.getElementById('displayTime').innerHTML = '';
+            document.getElementById('displayTime').innerHTML = '0 : 0 : 0 : 0';
             document.getElementById('Blastoff').innerHTML = 'Blastoff!'
+            document.body.style.backgroundImage = 'url("../images/hV3.gif")';
+            document.body.style.height = '100%';
         }
+
     }
-    countdownTimer();
     let pageRefresher = setInterval(countdownTimer, 1000);
+
 }

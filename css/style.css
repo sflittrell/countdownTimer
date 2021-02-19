@@ -1,14 +1,19 @@
 html {
+    
     background-color: black;
 }
 
 #explosion {
     background-image: url("../images/hV3.gif");
-    background-size: cover;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+
+    visibility: visible;
+    
 }
 /*
 article{
@@ -19,7 +24,7 @@ article{
 */
 
 h1 {
-    font-size: 38px;
+    font-size: 44px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:brown;
 }
@@ -47,11 +52,12 @@ form {
 
 #displayTime {
     font-family: "Major Mono Display",  monospace;
-    font-size: 26px;
-    color: white;
+    font-size: 36px;
+    color: red;
     background-color: black;
-    padding: 20px;
-    height: 25px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    height: 30px;
 
 }
 
@@ -78,4 +84,9 @@ form {
     font-size: 400%;
     color: red;
     font-weight: bold;
+}
+
+#rocket {
+    background-image: url("../images/rocket.png");
+
 }
